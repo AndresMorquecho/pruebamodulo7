@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <app-empresa-component [empresa]="datosEmpresa"></app-empresa-component>
+  </div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Sucursal</th>
+          <th scope="col">ID Producto</th>
+          <th scope="col">Nombre Producto</th>
+          <th scope="col">Descripcion Producto</th>
+          <th scope="col">Categoria Producto</th>
+          <th scope="col">Cantidad</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of stockSucursales; track $index) {
+        <tr app-item-inventario-component [item]="item"></tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

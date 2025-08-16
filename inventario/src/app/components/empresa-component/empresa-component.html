@@ -1,0 +1,17 @@
+<div>
+  <div>
+    <h2>{{ empresa.nombre }}</h2>
+  </div>
+  <div>
+    <ul class="list-group">
+      <li class="list-group-item">RUC: {{ empresa.ruc }}</li>
+      <li class="list-group-item">Ciudad: {{ empresa.direccion.ciudad }}</li>
+      <li class="list-group-item">
+        Calle Principal: {{ empresa.direccion.callePrincipal }}
+      </li>
+      <li class="list-group-item">
+        Calle Secundaria: {{ empresa.direccion.calleSecundaria }}
+      </li>
+    </ul>
+  </div>
+</div>
